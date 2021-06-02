@@ -8,8 +8,8 @@ resource "tfe_workspace" "workspace" {
   queue_all_runs    = var.workspace_list[count.index].queue_all_runs
   terraform_version = var.workspace_list[count.index].terraform_version
   vcs_repo {
-    identifier      = var.workspace_list[count.index].vcs_repo
-    oauth_token_id  = var.tfc_oath_token
+    identifier     = var.workspace_list[count.index].vcs_repo
+    oauth_token_id = var.tfc_oath_token
   }
   working_directory = var.workspace_list[count.index].working_dir
   count             = length(var.workspace_list)

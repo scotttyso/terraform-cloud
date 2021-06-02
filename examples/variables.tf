@@ -1,29 +1,29 @@
 variable "terraform_cloud_token" {
-  description   = "Token to Authenticate to the Terraform Cloud"
-  type          = string
-  sensitive     = true
+  description = "Token to Authenticate to the Terraform Cloud"
+  type        = string
+  sensitive   = true
 }
 
 variable "tfc_oath_token" {
-  description   = "Terraform Cloud OAuth Token for VCS_Repo Integration"
-  type          = string
-  sensitive     = true
+  description = "Terraform Cloud OAuth Token for VCS_Repo Integration"
+  type        = string
+  sensitive   = true
 }
 
 variable "tfc_org_name" {
-  description   = "Terraform Cloud Organization Name"
-  type          = string
+  description = "Terraform Cloud Organization Name"
+  type        = string
 }
 
 variable "agent_pool" {
-  description   = "Terraform Cloud Agent Pool"
-  type          = string
+  description = "Terraform Cloud Agent Pool"
+  type        = string
 }
 
 variable "apicPass" {
-  type          = string
-  sensitive     = true
-  description   = "APIC Password"
+  type        = string
+  sensitive   = true
+  description = "APIC Password"
 }
 
 variable "api_key" {
