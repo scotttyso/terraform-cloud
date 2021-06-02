@@ -1,13 +1,13 @@
 variable "terraform_cloud_token" {
   description = "Token to Authenticate to the Terraform Cloud"
-  type        = string
   sensitive   = true
+  type        = string
 }
 
 variable "tfc_oath_token" {
   description = "Terraform Cloud OAuth Token for VCS_Repo Integration"
-  type        = string
   sensitive   = true
+  type        = string
 }
 
 variable "tfc_org_name" {
@@ -21,29 +21,30 @@ variable "agent_pool" {
 }
 
 variable "apicPass" {
+  description = "APIC Password"
   type        = string
   sensitive   = true
-  description = "APIC Password"
 }
 
 variable "api_key" {
-  type        = string
   description = "API Key"
+  type        = string
+  sensitive   = true
 }
 
 variable "secret_key" {
-  sensitive   = true
-  type        = string
   description = "Secret Key or file location"
+  type        = string
 }
 
 variable "ssh_key" {
-  type        = string
   description = "SSH Public Key to be used to node login."
+  sensitive   = true
+  type        = string
 }
 
 variable "vc_password" {
+  description = "Password of the account to be used with vCenter.  This should be the password for the account used to register vCenter with Intersight."
   sensitive   = true
   type        = string
-  description = "Password of the account to be used with vCenter.  This should be the password for the account used to register vCenter with Intersight."
 }

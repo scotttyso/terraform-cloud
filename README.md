@@ -8,4 +8,4 @@
 
 ## Usage
 
-* Please refer to the example folder for an example.
+* Please refer to the example folder for a working example.
