@@ -1,5 +1,5 @@
 module "tfc_agent_pool" {
-  source       = "./modules/tfc_agent_pool"
+  source       = "../modules/tfc_agent_pool"
   agent_pool   = var.agent_pool
   tfc_org_name = var.tfc_org_name
 }
@@ -9,7 +9,7 @@ output "tfc_agent_pool" {
 }
 
 module "tfc_workspaces" {
-  source = "./modules/tfc_workspaces"
+  source = "../modules/tfc_workspaces"
   depends_on = [
     module.tfc_agent_pool
   ]
@@ -46,7 +46,7 @@ output "tfc_workspaces" {
 }
 
 module "tfc_variables_ACI" {
-  source = "./modules/tfc_variables"
+  source = "../modules/tfc_variables"
   depends_on = [
     module.tfc_workspaces
   ]
@@ -75,7 +75,7 @@ module "tfc_variables_ACI" {
 }
 
 module "tfc_variables_IKS" {
-  source = "./modules/tfc_variables"
+  source = "../modules/tfc_variables"
   depends_on = [
     module.tfc_workspaces
   ]

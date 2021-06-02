@@ -28,10 +28,10 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_tfc_agent_pool"></a> [tfc\_agent\_pool](#module\_tfc\_agent\_pool) | ./modules/tfc_agent_pool | n/a |
-| <a name="module_tfc_variables_ACI"></a> [tfc\_variables\_ACI](#module\_tfc\_variables\_ACI) | ./modules/tfc_variables | n/a |
-| <a name="module_tfc_variables_IKS"></a> [tfc\_variables\_IKS](#module\_tfc\_variables\_IKS) | ./modules/tfc_variables | n/a |
-| <a name="module_tfc_workspaces"></a> [tfc\_workspaces](#module\_tfc\_workspaces) | ./modules/tfc_workspaces | n/a |
+| <a name="module_tfc_agent_pool"></a> [tfc\_agent\_pool](#module\_tfc\_agent\_pool) | ../modules/tfc_agent_pool | n/a |
+| <a name="module_tfc_variables_ACI"></a> [tfc\_variables\_ACI](#module\_tfc\_variables\_ACI) | ../modules/tfc_variables | n/a |
+| <a name="module_tfc_variables_IKS"></a> [tfc\_variables\_IKS](#module\_tfc\_variables\_IKS) | ../modules/tfc_variables | n/a |
+| <a name="module_tfc_workspaces"></a> [tfc\_workspaces](#module\_tfc\_workspaces) | ../modules/tfc_workspaces | n/a |
 
 ## Resources
 

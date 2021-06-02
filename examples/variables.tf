@@ -22,18 +22,19 @@ variable "agent_pool" {
 
 variable "apicPass" {
   description = "APIC Password"
-  type        = string
   sensitive   = true
+  type        = string
 }
 
 variable "api_key" {
   description = "API Key"
-  type        = string
   sensitive   = true
+  type        = string
 }
 
 variable "secret_key" {
   description = "Secret Key or file location"
+  sensitive   = true
   type        = string
 }
 

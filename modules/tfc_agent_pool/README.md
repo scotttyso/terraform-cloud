@@ -16,15 +16,13 @@ This module will add a Terraform Cloud agent pool data source.
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.25.3 |
+No requirements.
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.25.3 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | n/a |
 
 ## Modules
 
@@ -34,7 +32,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [tfe_agent_pool.agent_pool](https://registry.terraform.io/providers/hashicorp/tfe/0.25.3/docs/data-sources/agent_pool) | data source |
+| [tfe_agent_pool.agent_pool](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/data-sources/agent_pool) | data source |
 
 ## Inputs
 

@@ -16,15 +16,13 @@ This module will Create a Terraform Cloud Workspace.
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.25.3 |
+No requirements.
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.25.3 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | n/a |
 
 ## Modules
 
@@ -34,7 +32,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [tfe_workspace.workspace](https://registry.terraform.io/providers/hashicorp/tfe/0.25.3/docs/resources/workspace) | resource |
+| [tfe_workspace.workspace](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/workspace) | resource |
 
 ## Inputs
 
