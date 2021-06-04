@@ -55,18 +55,21 @@ module "tfc_variables_ACI" {
   variable_list = [
     {
       description = "APIC Host URL."
+      hcl         = false
       key         = "apicHost"
       sensitive   = false
       value       = "https://wakanda-apic01.rich.ciscolabs.com"
     },
     {
       description = "APIC Username for Login."
+      hcl         = false
       key         = "apicUser"
       sensitive   = false
       value       = "admin"
     },
     {
       description = "APIC Password for Login."
+      hcl         = false
       key         = "apicPass"
       sensitive   = true
       value       = var.apicPass
@@ -84,57 +87,67 @@ module "tfc_variables_IKS" {
   variable_list = [
     {
       description = "Intersight URL."
+      hcl         = false
       key         = "endpoint"
       sensitive   = false
       value       = "https://www.intersight.com"
     },
     {
       description = "Intersight API Key for Authentication."
+      hcl         = false
       key         = "api_key"
       sensitive   = true
       value       = var.api_key
     },
     {
       description = "Intersight Secret Key for Authentication."
+      hcl         = false
       key         = "secret_key"
       sensitive   = true
       value       = var.secret_key
     },
     {
       description = "Intersight Organization Name."
+      hcl         = false
       key         = "organization"
       sensitive   = false
       value       = "Wakanda"
     },
     {
       description = "Virtual Center (vCenter) Hostname."
+      hcl         = false
       key         = "vc_target_name"
       sensitive   = false
       value       = "wakanda-vcenter.rich.ciscolabs.com"
     },
     {
       description = "vCenter Password for Authentication.  Note: This Must be the same password used for Intersight Target Registration."
+      hcl         = false
       key         = "vc_password"
       sensitive   = true
       value       = var.vc_password
     },
     {
       description = "SSH User for Kubernetes Cluster Login."
+      hcl         = false
       key         = "ssh_user"
       sensitive   = false
       value       = "iksadmin"
     },
     {
       description = "SSH Key for Kubernetes Cluster Authentication."
+      hcl         = false
       key         = "ssh_key"
       sensitive   = true
       value       = var.ssh_key
     },
     {
       description = "Tags to Assign to the Kubernetes Cluster."
+      hcl         = true
       key         = "tags"
       sensitive   = false
-      value       = "test"
+      value       = "[ { key = \"Terraform\", value = \"Module\" }, { key = \"Owner\", value = \"tyscott\" } ]"
     }
   ]
 }
+
