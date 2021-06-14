@@ -15,7 +15,6 @@ variable "tfc_org_name" {
 
 variable "workspace_list" {
   description = "Workspaces (containing agent_pool, description, exec_mode, name, vcs_repo, working_dir)."
-  # type        = list(map(string))
   type = map(object({
     auto_apply                = optional(bool)
     agent_pool                = optional(string)
