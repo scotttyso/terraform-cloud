@@ -1,7 +1,7 @@
 output "tfe_workspace_id" {
-  value = tfe_workspace.workspace.*.id
+  value = values(tfe_workspace.workspace)[*].id
 }
 
 output "tfe_workspace_name" {
-  value = tfe_workspace.workspace.*.name
+  value = values(tfe_workspace.workspace)[*].name
 }
