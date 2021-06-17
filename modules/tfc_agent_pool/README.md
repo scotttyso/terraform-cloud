@@ -5,7 +5,7 @@
 ```hcl
 module "tfc_agent_pool" {
 
-  source = "terraform-cloud//modules/tfc_agent_pool"
+  source = "terraform-cisco-modules/tfe//modules/tfc_agent_pool"
 
   # omitted...
 }

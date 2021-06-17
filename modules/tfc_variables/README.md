@@ -5,7 +5,7 @@
 ```hcl
 module "tfc_variables" {
 
-  source = "terraform-cloud//modules/tfc_variables"
+  source = "terraform-cisco-modules/tfe//modules/tfc_variables"
 
   # omitted...
 }
@@ -44,5 +44,7 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_tfe_variable_id"></a> [tfe\_variable\_id](#output\_tfe\_variable\_id) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
